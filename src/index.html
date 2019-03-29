@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Coder Connect</title>
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet" />
+        <link href="./index.css" rel="stylesheet" />
+        <script
+            defer
+            src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
+            integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <div class="bg-grey-lighter min-h-screen h-full">
+            <div class="flex justify-between items-center p-8">
+                <small>V. 0.0.1</small>
+                <h1 class="text-center">Coder Connect</h1>
+                <button id="addBtn"><i class="shadow text-3xl fas fa-plus-square"></i></button>
+            </div>
+            <div id="server-list" class="flex flex-col items-center"></div>
+        </div>
+        <div id="addModal" class="bg-white hidden">
+            <div class="p-5">
+                <div class="flex justify-end">
+                    <button id="closeModalBtn"><i class="fas fa-times-circle"></i></button>
+                </div>
+                <div class="flex flex-col">
+                    <input id="newServerName" class="m-2 p-2" type="text" placeholder="Name" />
+                    <input id="newServerUrl" class="m-2 p-2" type="url" placeholder="URL" />
+                    <button id="newServerSave" class="bg-blue text-white m-2 p-2 rounded">Save</button>
+                </div>
+            </div>
+        </div>
+        <script>
+            require('./index.js');
+        </script>
+    </body>
+</html>

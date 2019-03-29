@@ -1,15 +1,20 @@
 {
-    "name": "Coder Connect",
+    "name": "coder",
     "version": "0.0.1",
     "description": "",
     "main": "main.js",
     "scripts": {
-        "start": "electron ."
+        "start": "electron ./src/main",
+        "dev": "parcel ./src/index.html"
     },
     "keywords": [],
     "author": "Pasca Oberbeck",
     "license": "ISC",
     "devDependencies": {
-        "electron": "^4.1.1"
+        "electron": "^4.1.1",
+        "electron-reload": "^1.4.0"
+    },
+    "dependencies": {
+        "uuid": "^3.3.2"
     }
 }

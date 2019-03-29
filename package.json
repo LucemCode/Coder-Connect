@@ -1,0 +1,15 @@
+{
+    "name": "Coder Connect",
+    "version": "0.0.1",
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "keywords": [],
+    "author": "Pasca Oberbeck",
+    "license": "ISC",
+    "devDependencies": {
+        "electron": "^4.1.1"
+    }
+}

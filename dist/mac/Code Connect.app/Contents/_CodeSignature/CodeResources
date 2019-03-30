@@ -10,7 +10,7 @@
 		</data>
 		<key>Resources/app.asar</key>
 		<data>
-		ojEC5DFeLix+aWsFc1NT3Vt0ycw=
+		f3f2rLgnfJB6QKRlAr/LHn9O1TQ=
 		</data>
 		<key>Resources/electron.asar</key>
 		<data>
@@ -32,7 +32,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			1bRnxlhyePaN7fdlMWsisD5PV+A=
+			Jw5Zg/eh894Gr3UIEoKgKa2kKP8=
 			</data>
 			<key>requirement</key>
 			<string>identifier "com.github.Electron.framework" and anchor apple generic and certificate leaf[subject.CN] = "Mac Developer: pascal.oberbeck99@googlemail.com (375YYZYM3F)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
@@ -59,7 +59,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			Lw9cpykhQr8Eg+G3tRBovuTVN+s=
+			4g9JXjAvUiN6xok99WrUYS8pdoE=
 			</data>
 			<key>requirement</key>
 			<string>identifier "com.github.Squirrel" and anchor apple generic and certificate leaf[subject.CN] = "Mac Developer: pascal.oberbeck99@googlemail.com (375YYZYM3F)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
@@ -79,11 +79,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ojEC5DFeLix+aWsFc1NT3Vt0ycw=
+			f3f2rLgnfJB6QKRlAr/LHn9O1TQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			3oTEwHJmlEhLrr7dzxCQRoTuzgUHYNbra510foFqzOE=
+			fkKudctdujLSV+rUuQfrvZEg+86XEUxWxBSQjXiQ9kc=
 			</data>
 		</dict>
 		<key>Resources/electron.asar</key>

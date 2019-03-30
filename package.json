@@ -1,21 +1,25 @@
 {
     "name": "coder",
     "version": "0.0.1",
-    "description": "",
-    "main": "main.js",
+    "description": "An App to connect better to code-server",
+    "main": "./src/main.js",
     "scripts": {
         "start": "electron ./src/main",
-        "dev": "parcel ./src/index.html"
+        "pack": "electron-builder --dir",
+        "dist": "electron-builder"
+    },
+    "build": {
+        "appId": "de.lucemcode.code-connect",
+        "productName": "Code Connect"
     },
     "keywords": [],
     "author": "Pasca Oberbeck",
     "license": "ISC",
     "devDependencies": {
         "electron": "^4.1.1",
-        "electron-reload": "^1.4.0"
+        "electron-builder": "^20.39.0"
     },
     "dependencies": {
-        "custom-electron-titlebar": "^3.0.5",
         "uuid": "^3.3.2"
     }
 }

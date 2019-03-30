@@ -1,0 +1,6 @@
+directories:
+  output: dist
+  buildResources: build
+appId: de.lucemcode.code-connect
+productName: Code Connect
+electronVersion: 4.1.3

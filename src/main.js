@@ -1,11 +1,9 @@
 const { app, BrowserWindow } = require('electron');
-// Enable live reload for all the files inside your project directory
-//require('electron-reload')(`${__dirname}`);
 
 let win;
 
 function createWindow() {
-    win = new BrowserWindow({ width: 800, height: 800, titleBarStyle: 'hidden' });
+    win = new BrowserWindow({ width: 600, height: 400, titleBarStyle: 'hidden' });
     win.setOpacity(0.98);
 
     win.loadFile(`${__dirname}/index.html`);

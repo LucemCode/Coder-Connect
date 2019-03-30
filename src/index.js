@@ -1,9 +1,16 @@
 let fs = require('fs');
+let Store = require('./store');
 const { BrowserWindow } = require('electron').remote;
 const uuid = require('uuid/v4');
 
 // Declare Vars
-let fsData;
+let fsData = {};
+let store = new Store({
+    configName: 'user-preferences',
+    defaults: {
+        servers: []
+    }
+});
 
 // Get Server List from DOM
 let serverList = document.getElementById('server-list');
@@ -42,13 +49,9 @@ let createServerListItems = item => {
 };
 
 let readFile = () => {
-    fs.readFile(`${__dirname}/data/data.json`, 'utf-8', (err, data) => {
-        if (err) throw err;
-        fsData = {};
-        fsData = JSON.parse(data);
-        fsData.servers.forEach(element => {
-            createServerListItems(element);
-        });
+    fsData.servers = store.get('servers');
+    fsData.servers.forEach(element => {
+        createServerListItems(element);
     });
 };
 
@@ -61,19 +64,13 @@ let addServer = (name, url) => {
         id: uuid()
     };
     fsData.servers.push(item);
-    fs.writeFile(`${__dirname}/data/data.json`, JSON.stringify(fsData), function(err) {
-        if (err) throw err;
-        console.log('Replaced!');
-    });
+    store.set('servers', fsData.servers);
     createServerListItems(item);
 };
 
 let removeServer = id => {
     fsData.servers = fsData.servers.filter(servers => servers.id !== id);
-    fs.writeFile(`${__dirname}/data/data.json`, JSON.stringify(fsData), function(err) {
-        if (err) throw err;
-        console.log('Replaced!');
-    });
+    store.set('servers', fsData.servers);
     document.getElementById(id).outerHTML = '';
 };
 

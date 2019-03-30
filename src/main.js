@@ -5,9 +5,9 @@ const { app, BrowserWindow } = require('electron');
 let win;
 
 function createWindow() {
-    win = new BrowserWindow({ width: 800, height: 800 });
+    win = new BrowserWindow({ width: 800, height: 800, titleBarStyle: 'hidden' });
+    win.setOpacity(0.98);
 
-    //win.loadURL('http://server.lucemcode.me:8443');
     win.loadFile(`${__dirname}/index.html`);
 
     // Öffnen der DevTools.

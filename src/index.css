@@ -9,3 +9,7 @@
 .hiddem {
     display: none;
 }
+
+.pointer {
+    cursor: pointer;
+}

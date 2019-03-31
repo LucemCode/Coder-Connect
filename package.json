@@ -1,6 +1,6 @@
 {
-    "name": "coder",
-    "version": "0.0.1",
+    "name": "coder-connect",
+    "version": "0.1.0",
     "description": "An App to connect better to code-server",
     "main": "./src/main.js",
     "scripts": {

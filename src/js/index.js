@@ -85,8 +85,24 @@ document.getElementById('closeModalBtn').addEventListener('click', () => {
     document.getElementById('addModal').classList.add('slideOutDown');
 });
 
-document.getElementById('newServerSave').addEventListener('click', () => {
-    addServer(document.getElementById('newServerName').value, document.getElementById('newServerUrl').value);
-    document.getElementById('addModal').classList.remove('fadeInUp');
-    document.getElementById('addModal').classList.add('slideOutDown');
+document.getElementById('newServerSave').addEventListener('click', e => {
+    e.preventDefault();
+    let urlPrefix = document.getElementById('newServerUrlPrefix').value;
+    let url = document.getElementById('newServerUrl').value;
+    url = url
+        .replace('http://', '')
+        .replace('https://', '')
+        .replace('www.', '');
+    let port = document.getElementById('newSeverPort').value;
+    let name = document.getElementById('newServerName').value;
+    let readyUrl = `${urlPrefix}${url}:${port}`;
+    if (name && readyUrl) {
+        addServer(name, readyUrl);
+        document.getElementById('addModal').classList.remove('fadeInUp');
+        document.getElementById('addModal').classList.add('slideOutDown');
+        document.getElementById('newServerUrl').value = '';
+        document.getElementById('newServerName').value = '';
+    } else {
+        document.getElementById('errorMsg').innerHTML = 'Please fill out all Inputs';
+    }
 });

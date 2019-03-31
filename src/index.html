@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,20 +14,36 @@
         <div class="h-5" style="-webkit-app-region: drag; position: fixed; top: 0; left: 0; right: 0;"></div>
         <div>
             <div class="flex justify-between items-center p-8">
-                <small>V. 0.0.1</small>
+                <small>V. 0.1.0</small>
                 <button id="addBtn"><i class="shadow text-white text-3xl fas fa-plus-square"></i></button>
             </div>
             <div id="server-list" class="animated fadeInUp flex flex-col items-center"></div>
         </div>
-        <div id="addModal" class="animated bg-white hidden slideOutDown">
+        <div id="addModal" class="animated bg-white text-grey-darkest hidden slideOutDown">
             <div class="p-5">
                 <div class="flex justify-end">
                     <button id="closeModalBtn"><i class="fas fa-times-circle"></i></button>
                 </div>
-                <div class="flex flex-col">
-                    <input id="newServerName" class="m-2 p-2" type="text" placeholder="Name" />
-                    <input id="newServerUrl" class="m-2 p-2" type="url" placeholder="URL" />
-                    <button id="newServerSave" class="bg-blue text-white m-2 p-2 rounded">Save</button>
+                <form class="flex flex-col">
+                    <label class="mx-2">Name</label>
+                    <input id="newServerName" class="m-2 p-2 bg-grey-lighter" type="text" required />
+                    <label class="mx-2">URL</label>
+                    <div class="flex m-2 ">
+                        <select id="newServerUrlPrefix">
+                            <option value="http://">http://</option>
+                            <option value="https://">https://</option>
+                        </select>
+                        <input id="newServerUrl" class="w-full mx-2 p-2 bg-grey-lighter flex1" type="text" required />
+                        <p class="p-2">:</p>
+                        <input id="newSeverPort" class="w-16 p-2 bg-grey-lighter flex1" type="number" value="8443" required />
+                    </div>
+                    <input id="newServerSave" class="bg-blue text-white m-2 p-2 rounded" type="submit" value="Save" />
+                </form>
+                <div class="text-center">
+                    <small><strong>Note that self signd SSL Cert. are not supported yet.</strong></small>
+                </div>
+                <div class="text-center m-4">
+                    <strong id="errorMsg" class="text-red"></strong>
                 </div>
             </div>
         </div>

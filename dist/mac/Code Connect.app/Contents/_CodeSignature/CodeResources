@@ -8,13 +8,9 @@
 		<data>
 		Jg4JcPsTjwuYrxajgc7TqiQSBHs=
 		</data>
-		<key>Resources/app-update.yml</key>
-		<data>
-		/ELmGKlUZWdLsbrvJ0WRlP01dow=
-		</data>
 		<key>Resources/app.asar</key>
 		<data>
-		9DZQntL1Es+y5tHFi2zbA6NR0do=
+		fmW2KIk4ZoG7Bf+jw2bEr2th7/I=
 		</data>
 		<key>Resources/electron.asar</key>
 		<data>
@@ -27,7 +23,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			whwtlxdxY9YATEmpo6SSp/AiXS0=
+			LL2Uod3e6/ho99YxmkgwnstjvQo=
 			</data>
 			<key>requirement</key>
 			<string>identifier "de.lucemcode.code-connect.helper" and anchor apple generic and certificate leaf[subject.CN] = "Mac Developer: pascal.oberbeck99@googlemail.com (375YYZYM3F)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
@@ -36,7 +32,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			cy0TYsm+RhkmncluEbtBMJg162I=
+			RjTUqpTSgsTxz7VnUN7Y0eu/dTk=
 			</data>
 			<key>requirement</key>
 			<string>identifier "com.github.Electron.framework" and anchor apple generic and certificate leaf[subject.CN] = "Mac Developer: pascal.oberbeck99@googlemail.com (375YYZYM3F)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
@@ -63,7 +59,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			U/I1hG1MUendVR7SEPhxrjpBFgw=
+			ToFKR9ALTgr5ZdW1VWDDrR4RGm8=
 			</data>
 			<key>requirement</key>
 			<string>identifier "com.github.Squirrel" and anchor apple generic and certificate leaf[subject.CN] = "Mac Developer: pascal.oberbeck99@googlemail.com (375YYZYM3F)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
@@ -79,26 +75,15 @@
 			9T5jDsTqlp56KTAL9jtvapquqiXpNmkA5087rJlOEXU=
 			</data>
 		</dict>
-		<key>Resources/app-update.yml</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			/ELmGKlUZWdLsbrvJ0WRlP01dow=
-			</data>
-			<key>hash2</key>
-			<data>
-			UFiNAeCkvTgRTQaUAYwfDs0BRbwmEbzTuBkQEqsjUTM=
-			</data>
-		</dict>
 		<key>Resources/app.asar</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9DZQntL1Es+y5tHFi2zbA6NR0do=
+			fmW2KIk4ZoG7Bf+jw2bEr2th7/I=
 			</data>
 			<key>hash2</key>
 			<data>
-			iJ1U1YFTyavPmIgwQ8QuY3EOT4TuEPBQHyXdRsJLAOA=
+			B3adOvB0VF9KQyGEm99wi0MQ7h4KQR56m1bzXCKj8II=
 			</data>
 		</dict>
 		<key>Resources/electron.asar</key>

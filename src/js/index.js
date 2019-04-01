@@ -11,6 +11,12 @@ let store = new Store({
         servers: []
     }
 });
+let online = navigator.onLine;
+
+// Check if user is online
+if (!online) {
+    document.getElementById('errorMsg').innerHTML = 'No Internet connection!';
+}
 
 // Get server list from DOM
 let serverList = document.getElementById('server-list');

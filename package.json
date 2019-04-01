@@ -10,7 +10,7 @@
     },
     "build": {
         "appId": "de.lucemcode.code-connect",
-        "productName": "Code Connect"
+        "productName": "Coder Connect"
     },
     "keywords": [],
     "author": "Pasca Oberbeck",

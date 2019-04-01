@@ -3,8 +3,13 @@
     "version": "1.0.0",
     "description": "An App to connect better to code-server",
     "repository": {
+<<<<<<< HEAD
         "type": "git",
         "url": "https://github.com/LucemCode/Coder-Connect.git"
+=======
+        "type" : "git",
+        "url" : "https://github.com/LucemCode/Coder-Connect.git"
+>>>>>>> e39b28e8ca8cc45cb97a2126468aea3649d19301
     },
     "main": "./src/main.js",
     "scripts": {

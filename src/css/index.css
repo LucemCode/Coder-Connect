@@ -12,8 +12,8 @@ select:focus {
 
 #addModal {
     position: absolute;
-    left: 0;
-    right: 0;
+    left: 20px;
+    right: 20px;
     bottom: 0;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;

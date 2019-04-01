@@ -97,6 +97,8 @@ document.getElementById('closeModalBtn').addEventListener('click', () => {
     // Add and remove classes for animation
     document.getElementById('addModal').classList.remove('fadeInUp');
     document.getElementById('addModal').classList.add('slideOutDown');
+    // Reset error Msg
+    document.getElementById('errorMsg').innerHTML = '';
 });
 
 document.getElementById('newServerSave').addEventListener('click', e => {

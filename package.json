@@ -3,9 +3,9 @@
     "version": "1.0.0",
     "description": "An App to connect better to code-server",
     "repository": {
-        "type" : "git",
-        "url" : "https://github.com/LucemCode/Coder-Connect.git"
-    }
+        "type": "git",
+        "url": "https://github.com/LucemCode/Coder-Connect.git"
+    },
     "main": "./src/main.js",
     "scripts": {
         "start": "electron ./src/main",

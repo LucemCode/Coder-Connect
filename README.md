@@ -1,4 +1,5 @@
 # Coder Connect 
+[![Build Status](https://travis-ci.com/LucemCode/Coder-Connect.svg?branch=master)](https://travis-ci.com/LucemCode/Coder-Connect)
 
 ![alt text](./img/img1.png)
 Coder Connect is an Electron Based client to connect easier with your [code-server](https://coder.com) instance.

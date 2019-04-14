@@ -10,7 +10,7 @@
         <link href="./css/animate.min.css" rel="stylesheet" />
         <script src="./js/fontawesom.js"></script>
     </head>
-    <body class="bg-grey-darkest text-white min-h-screen h-full">
+    <body class="bg-grey-darkest text-white min-h-screen h-full min-w-screen w-full fixed">
         <div class="h-5" style="-webkit-app-region: drag; position: fixed; top: 0; left: 0; right: 0;"></div>
         <div class="absolute w-full text-center m-4">
             <strong id="errorMsg" class="text-red"></strong>
@@ -37,7 +37,7 @@
                         </select>
                         <input id="newServerUrl" class="w-full mx-2 p-2 bg-grey-lighter flex1" type="text" required />
                         <p class="p-2">:</p>
-                        <input id="newSeverPort" class="w-16 p-2 bg-grey-lighter flex1" type="number" value="8443" required />
+                        <input id="newSeverPort" class="w-24 p-2 bg-grey-lighter flex1" type="number" value="8443" required />
                     </div>
                     <input id="newServerSave" class="pointer bg-blue text-white m-2 p-2 rounded" type="submit" value="Save" />
                 </form>

@@ -20,7 +20,7 @@
     "author": "Pascal Oberbeck",
     "license": "ISC",
     "devDependencies": {
-        "electron": "^4.1.1",
+        "electron": "^8.0.0",
         "electron-builder": "^20.39.0"
     },
     "dependencies": {

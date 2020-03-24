@@ -24,6 +24,6 @@
         "electron-builder": "^22.4.1"
     },
     "dependencies": {
-        "uuid": "^3.3.2"
+        "uuid": "^7.0.2"
     }
 }
